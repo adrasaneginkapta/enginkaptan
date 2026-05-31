@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.enginkaptan.com.tr/sitemap.xml
+
+# Engelleme
+Disallow: /assets/
