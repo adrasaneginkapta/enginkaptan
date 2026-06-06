@@ -139,3 +139,46 @@ h1{font-size:var(--text-2xl);max-width:12ch}h2{font-size:clamp(1.8rem,1.3rem + 2
     display: inline-flex !important;
   }
 }
+/* ══════════════════════════════════════════
+   Logo renk filtresi
+   Beyaz logoya:
+     - Aydınlık modda → lacivert tonu
+     - Karanlık modda → beyaz (değişmez)
+   ══════════════════════════════════════════ */
+
+/* Aydınlık mod: beyazı laciverte çevir */
+[data-theme="light"] .brand img,
+[data-theme="light"] .footer img {
+  filter:
+    brightness(0)           /* önce siyaha indir */
+    saturate(100%)
+    invert(18%)             /* sonra laciverte dönüştür */
+    sepia(60%)
+    saturate(500%)
+    hue-rotate(200deg)
+    brightness(0.6);
+  transition: filter 300ms ease;
+}
+
+/* Sistem tercihi aydınlık ama data-theme henüz set edilmemişse */
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme]) .brand img,
+  :root:not([data-theme]) .footer img {
+    filter:
+      brightness(0)
+      saturate(100%)
+      invert(18%)
+      sepia(60%)
+      saturate(500%)
+      hue-rotate(200deg)
+      brightness(0.6);
+    transition: filter 300ms ease;
+  }
+}
+
+/* Karanlık mod: beyaz kalır, filtre sıfır */
+[data-theme="dark"] .brand img,
+[data-theme="dark"] .footer img {
+  filter: none;
+  transition: filter 300ms ease;
+}
