@@ -1,3 +1,0 @@
-# Eski sayfaları yeni yapıya yönlendir (gerekirse)
-/ana-sayfa / 301
-/tekne-turları/* /tekne-turlari/:splat 301
