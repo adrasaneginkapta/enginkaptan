@@ -1,0 +1,6 @@
+/index /index.html 200
+/iletisim /iletisim.html 200
+/galeri /galeri.html 200
+/eylul-apart /eylul-apart.html 200
+/ozel-tur /ozel-tur.html 200
+/suluada-turu /suluada-turu.html 200

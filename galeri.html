@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Fotoğraf Galerisi | Adrasan Engin Kaptan</title>
+  <meta name="description" content="Adrasan, Suluada, tekne turu ve Eylül Apart konaklama görselleri. Türkiye'nin en güzel koylarından seçilmiş kareler.">
+  <meta name="keywords" content="Adrasan Galeri, Suluada Fotoğrafları, Adrasan Tekne Turu Görseller, Eylül Apart Fotoğrafları">
+  <meta name="author" content="Engin Kaptan">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Fotoğraf Galerisi | Adrasan Engin Kaptan">
+  <meta property="og:description" content="Adrasan ve Suluada'dan seçilmiş en güzel kareler.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.enginkaptan.com.tr/galeri.html">
+  <meta property="og:image" content="./assets/images/hero/suluada-hero.jpg">
+  <link rel="canonical" href="https://www.enginkaptan.com.tr/galeri.html">
+  <link rel="icon" href="./assets/images/logo/favicon.ico">
+  <link rel="apple-touch-icon" href="./assets/images/logo/apple-touch.png">
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=boska@400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <style>
+    /* ── Galeri grid ── */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: var(--space-3);
+    }
+    .gallery-grid figure { margin: 0; position: relative; overflow: hidden; border-radius: var(--radius-lg); background: var(--color-surface-offset); cursor: pointer; }
+    .gallery-grid figure img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .45s cubic-bezier(.16,1,.3,1); }
+    .gallery-grid figure:hover img { transform: scale(1.04); }
+    .gallery-grid figcaption { position: absolute; bottom: 0; left: 0; right: 0; padding: var(--space-3) var(--space-4); background: linear-gradient(transparent, oklch(0 0 0 / .55)); color: #fff; font-size: var(--text-sm); opacity: 0; transition: opacity .3s ease; }
+    .gallery-grid figure:hover figcaption { opacity: 1; }
+
+    /* span helpers */
+    .col-8  { grid-column: span 8; }
+    .col-4  { grid-column: span 4; }
+    .col-6  { grid-column: span 6; }
+    .col-12 { grid-column: span 12; }
+    .col-8  { aspect-ratio: 16/9; }
+    .col-4  { aspect-ratio: 3/4; }
+    .col-6  { aspect-ratio: 4/3; }
+    .col-12 { aspect-ratio: 21/7; }
+
+    @media (max-width: 768px) {
+      .gallery-grid { grid-template-columns: 1fr 1fr; gap: var(--space-2); }
+      .col-8, .col-4, .col-6, .col-12 { grid-column: span 2; aspect-ratio: 4/3; }
+    }
+    @media (max-width: 480px) {
+      .gallery-grid { grid-template-columns: 1fr; }
+      .col-8, .col-4, .col-6, .col-12 { grid-column: span 1; aspect-ratio: 4/3; }
+    }
+
+    /* ── Lightbox ── */
+    .lightbox { display: none; position: fixed; inset: 0; background: oklch(0 0 0 / .92); z-index: 1000; align-items: center; justify-content: center; padding: var(--space-8); }
+    .lightbox.open { display: flex; }
+    .lightbox img { max-width: 90vw; max-height: 85vh; object-fit: contain; border-radius: var(--radius-lg); }
+    .lightbox-close { position: absolute; top: var(--space-6); right: var(--space-6); color: #fff; font-size: 2rem; background: none; border: none; cursor: pointer; line-height: 1; }
+    .lightbox-caption { position: absolute; bottom: var(--space-6); left: 50%; transform: translateX(-50%); color: #fff; font-size: var(--text-sm); text-align: center; }
+
+    /* ── Filtre butonları ── */
+    .gallery-filters { display: flex; gap: var(--space-2); flex-wrap: wrap; margin-bottom: var(--space-8); }
+    .filter-btn { padding: var(--space-2) var(--space-5); border-radius: var(--radius-full); font-size: var(--text-sm); font-weight: 500; border: 1px solid var(--color-border); background: var(--color-surface); color: var(--color-text-muted); cursor: pointer; transition: all var(--transition-interactive); }
+    .filter-btn:hover, .filter-btn.active { background: var(--color-primary); color: #fff; border-color: var(--color-primary); }
+  </style>
+</head>
+<body>
+
+<a class="skip-link" href="#main">İçeriğe geç</a>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="./index.html" aria-label="Adrasan Engin Kaptan ana sayfa">
+      <img src="./assets/images/logo/engin-kaptan-logo.png" alt="Adrasan Engin Kaptan logosu" width="100" height="100">
+      <span class="brand-mark">
+        <strong>Engin Kaptan</strong>
+        <span>Adrasan Tekne Turu &amp; Konaklama</span>
+      </span>
+    </a>
+    <nav aria-label="Ana menü">
+      <button class="menu-toggle" data-menu-toggle aria-label="Menüyü aç" aria-expanded="false">☰</button>
+      <div class="nav-links" data-menu>
+        <a href="./index.html">Ana Sayfa</a>
+        <a href="./suluada-turu.html">Suluada Turu</a>
+        <a href="./ozel-tur.html">Özel Tur</a>
+        <a href="./eylul-apart.html">Eylül Apart</a>
+        <a href="./galeri.html" class="active">Fotoğraflar</a>
+        <a href="./iletisim.html">İletişim</a>
+        <a href="./video-galeri.html">Videolar</a>
+        <a href="./blog.html">Merak Edilenler</a>
+      </div>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" data-theme-toggle aria-label="Tema değiştir"></button>
+      <a class="btn btn-primary" href="https://wa.me/905323328476" target="_blank" rel="noopener noreferrer">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.134.558 4.133 1.533 5.866L0 24l6.334-1.513A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.8 9.8 0 01-5.021-1.38l-.36-.214-3.754.897.947-3.656-.235-.374A9.8 9.8 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ════ HERO ════ -->
+  <section class="hero" style="min-height:40vh">
+    <div class="container hero-grid" style="align-items:center">
+      <div class="hero-copy reveal">
+        <span class="kicker">Fotoğraf Galerisi</span>
+        <h1>Adrasan ve Suluada'dan seçilmiş kareler.</h1>
+        <p>Türkiye'nin en güzel koylarından biri olan Adrasan'ın berrak suları, Suluada'nın eşsiz manzaraları ve tekne turlarından unutulmaz anlar.</p>
+        <div class="hero-meta">
+          <span>Suluada</span>
+          <span>Tekne Turları</span>
+          <span>Eylül Apart</span>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="hero-card">
+          <img src="./assets/images/hero/suluada-hero.jpg" alt="Suluada ve çevresindeki berrak mavi koylar" width="1366" height="768">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ GALERİ ════ -->
+  <section class="section section-alt">
+    <div class="container">
+
+      <!-- Filtre -->
+      <div class="gallery-filters reveal" role="group" aria-label="Galeri filtreleri">
+        <button class="filter-btn active" data-filter="all">Tümü</button>
+        <button class="filter-btn" data-filter="suluada">Suluada</button>
+        <button class="filter-btn" data-filter="tekne">Tekne Turu</button>
+        <button class="filter-btn" data-filter="apart">Eylül Apart</button>
+        <button class="filter-btn" data-filter="koy">Koylar</button>
+      </div>
+
+      <!-- Grid -->
+      <div class="gallery-grid" id="gallery">
+
+        <figure class="col-8" data-category="suluada">
+          <img src="./assets/images/hero/suluada-hero.jpg" alt="Suluada kıyılarında demirli tur tekneleri" width="1366" height="768" loading="lazy">
+          <figcaption>Suluada — berrak sularda tur tekneleri</figcaption>
+        </figure>
+
+        <figure class="col-4" data-category="tekne">
+          <img src="./assets/images/hero/private-tour-hero.jpg" alt="Mağara önünde özel tur teknesi" width="1366" height="768" loading="lazy">
+          <figcaption>Özel tur teknesi — Adrasan mağaraları</figcaption>
+        </figure>
+
+        <figure class="col-4" data-category="apart">
+          <img src="./assets/images/hero/eylul-apart-hero.jpg" alt="Eylül Apart ahşap bungalov daireler" width="1366" height="768" loading="lazy">
+          <figcaption>Eylül Apart — ahşap bungalov daireler</figcaption>
+        </figure>
+
+        <figure class="col-8" data-category="koy">
+          <img src="./assets/images/boat/tekne-turkuaz-koy.jpg" alt="Turkuaz koyda demir atmış tekne" width="1366" height="768" loading="lazy">
+          <figcaption>Turkuaz koy — drone perspektifi</figcaption>
+        </figure>
+
+        <figure class="col-6" data-category="suluada">
+          <img src="./assets/images/hero/suluada-hero.jpg" alt="Suluada adası hava görüntüsü" width="1366" height="768" loading="lazy">
+          <figcaption>Suluada — hava görüntüsü</figcaption>
+        </figure>
+
+        <figure class="col-6" data-category="tekne">
+          <img src="./assets/images/hero/private-tour-hero.jpg" alt="Güneşli günde özel tur" width="1366" height="768" loading="lazy">
+          <figcaption>Özel tur — güneşli bir gün</figcaption>
+        </figure>
+
+        <figure class="col-12" data-category="koy">
+          <img src="./assets/images/boat/tekne-turkuaz-koy.jpg" alt="Adrasan koylarının panoramik görünümü" width="1366" height="768" loading="lazy">
+          <figcaption>Adrasan koyları — panoramik görünüm</figcaption>
+        </figure>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ VIDEO GALERİ YÖNLENDIRME ════ -->
+  <section class="section">
+    <div class="container">
+      <div class="cta reveal">
+        <span class="kicker">Video Galeri</span>
+        <h2>Hareketli görüntülerle Adrasan'ı keşfedin.</h2>
+        <p>Tekne turu ve Suluada videolarını izlemek için video galeri sayfamızı ziyaret edin.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="./video-galeri.html">Videoları izle</a>
+          <a class="btn btn-secondary" href="https://wa.me/905323328476" target="_blank" rel="noopener noreferrer">Rezervasyon yap</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <img src="./assets/images/logo/logo-small.png" alt="Adrasan Engin Kaptan logosu" width="200" height="70">
+      <strong>Adrasan Engin Kaptan</strong>
+      <p>Adrasan çıkışlı Suluada tekne turları, özel tekne organizasyonları ve aile dostu konaklama seçenekleri. Antalya - Kumluca - Adrasan.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Alt menü">
+      <a href="./suluada-turu.html">Suluada Turu</a>
+      <a href="./ozel-tur.html">Özel Tur</a>
+      <a href="./eylul-apart.html">Eylül Apart</a>
+      <a href="./galeri.html">Fotoğraflar</a>
+      <a href="./iletisim.html">İletişim</a>
+      <a href="./video-galeri.html">Videolar</a>
+      <a href="./blog.html">Merak Edilenler</a>
+    </nav>
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Büyütülmüş fotoğraf">
+  <button class="lightbox-close" id="lightbox-close" aria-label="Kapat">✕</button>
+  <img id="lightbox-img" src="" alt="">
+  <p class="lightbox-caption" id="lightbox-caption"></p>
+</div>
+
+<script src="./script.js" defer></script>
+<script>
+  // Lightbox
+  const figures = document.querySelectorAll('.gallery-grid figure');
+  const lb = document.getElementById('lightbox');
+  const lbImg = document.getElementById('lightbox-img');
+  const lbCap = document.getElementById('lightbox-caption');
+  figures.forEach(fig => {
+    fig.addEventListener('click', () => {
+      const img = fig.querySelector('img');
+      const cap = fig.querySelector('figcaption');
+      lbImg.src = img.src;
+      lbImg.alt = img.alt;
+      lbCap.textContent = cap ? cap.textContent : '';
+      lb.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+  document.getElementById('lightbox-close').addEventListener('click', closeLB);
+  lb.addEventListener('click', e => { if (e.target === lb) closeLB(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLB(); });
+  function closeLB() { lb.classList.remove('open'); document.body.style.overflow = ''; }
+
+  // Filtrele
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const f = btn.dataset.filter;
+      figures.forEach(fig => {
+        fig.style.display = (f === 'all' || fig.dataset.category === f) ? '' : 'none';
+      });
+    });
+  });
+</script>
+</body>
+</html>
