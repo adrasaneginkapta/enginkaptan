@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Adrasan ve Koylar | Adrasan Engin Kaptan</title>
+  <meta name="description" content="Adrasan koyları, Suluada, Akseki Koyu, Sazak Koyu, Ceneviz Koyu ve Korsan Koyu hakkında ayrıntılı bilgiler. Adrasan'ın doğası, denizi ve tekne turu rotaları.">
+  <meta name="keywords" content="Adrasan Koyları, Suluada, Akseki Koyu, Sazak Koyu, Ceneviz Koyu, Korsan Koyu, Adrasan Tekne Turu, Antalya Koylar">
+  <meta name="author" content="Engin Kaptan">
+  <meta name="robots" content="index, follow">
+  <meta name="geo.region" content="TR-07">
+  <meta name="geo.placename" content="Adrasan, Kumluca, Antalya">
+  <meta name="geo.position" content="36.35;30.45">
+  <meta name="ICBM" content="36.35, 30.45">
+  <meta property="og:title" content="Adrasan ve Koylar | Adrasan Engin Kaptan">
+  <meta property="og:description" content="Adrasan ve çevresindeki en güzel koyları yakından tanıyın. Suluada, Akseki, Sazak, Ceneviz ve Korsan Koyu hakkında ayrıntılı bilgiler.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.enginkaptan.com.tr/adrasan-ve-koylar.html">
+  <meta property="og:image" content="./assets/images/hero/suluada-hero.jpg">
+  <link rel="canonical" href="https://www.enginkaptan.com.tr/adrasan-ve-koylar.html">
+  <link rel="icon" href="./assets/images/logo/favicon.ico">
+  <link rel="apple-touch-icon" href="./assets/images/logo/apple-touch.png">
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=boska@400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TouristDestination",
+    "name": "Adrasan ve Koyları",
+    "description": "Adrasan çıkışlı tekne turlarında görülen Suluada, Akseki Koyu, Sazak Koyu, Ceneviz Koyu ve Korsan Koyu hakkında bilgilendirme sayfası.",
+    "url": "https://www.enginkaptan.com.tr/adrasan-ve-koylar.html",
+    "touristType": ["Doğa severler", "Yüzme tutkunları", "Aileler", "Fotoğraf meraklıları"],
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 36.35,
+      "longitude": 30.45
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Adrasan",
+      "addressRegion": "Antalya",
+      "addressCountry": "TR"
+    }
+  }
+  </script>
+  <style>
+    .detail-grid {
+      display: grid;
+      grid-template-columns: 320px minmax(0, 1fr);
+      gap: var(--space-8);
+      align-items: start;
+    }
+    .side-card,
+    .koy-card,
+    .intro-card {
+      background: var(--color-surface);
+      border: 1px solid oklch(from var(--color-text) l c h / 0.08);
+      box-shadow: var(--shadow-sm);
+      border-radius: var(--radius-xl);
+    }
+    .side-card {
+      padding: var(--space-6);
+      position: sticky;
+      top: calc(var(--space-16) + 20px);
+    }
+    .toc-list {
+      display: grid;
+      gap: var(--space-2);
+      margin-top: var(--space-4);
+    }
+    .toc-list a {
+      display: block;
+      padding: var(--space-3) var(--space-4);
+      border-radius: var(--radius-md);
+      text-decoration: none;
+      color: var(--color-text-muted);
+      background: var(--color-surface-offset);
+    }
+    .toc-list a:hover {
+      background: var(--color-primary-highlight);
+      color: var(--color-text);
+    }
+    .koy-stack {
+      display: grid;
+      gap: var(--space-5);
+    }
+    .koy-card {
+      overflow: hidden;
+      scroll-margin-top: 120px;
+    }
+    .koy-media img {
+      width: 100%;
+      aspect-ratio: 16 / 8;
+      object-fit: cover;
+      display: block;
+    }
+    .koy-body {
+      padding: var(--space-6);
+    }
+    .koy-body h3 {
+      font-size: var(--text-xl);
+      margin-bottom: var(--space-3);
+    }
+    .koy-body p {
+      color: var(--color-text-muted);
+    }
+    .koy-points {
+      margin-top: var(--space-4);
+      display: grid;
+      gap: var(--space-3);
+    }
+    .koy-point {
+      padding: var(--space-4);
+      border-radius: var(--radius-lg);
+      background: var(--color-surface-offset);
+    }
+    .koy-point strong {
+      display: block;
+      margin-bottom: .35rem;
+    }
+    .facts-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--space-4);
+    }
+    .facts-grid .card { min-height: 100%; }
+    .mini-map {
+      margin-top: var(--space-4);
+      padding: var(--space-4);
+      border-radius: var(--radius-lg);
+      background: var(--color-surface-offset);
+      color: var(--color-text-muted);
+    }
+    @media (max-width: 1024px) {
+      .detail-grid { grid-template-columns: 1fr; }
+      .side-card { position: static; }
+      .facts-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 640px) {
+      .facts-grid { grid-template-columns: 1fr; }
+      .koy-body { padding: var(--space-5); }
+    }
+
+    .tags-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+      margin-top: var(--space-4);
+    }
+    .tags-row span {
+      display: inline-flex;
+      align-items: center;
+      padding: .55rem .85rem;
+      border-radius: 999px;
+      font-size: var(--text-xs);
+      background: var(--color-primary-highlight);
+      color: var(--color-primary);
+      font-weight: 700;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+    .plan-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-4);
+      margin-top: var(--space-6);
+    }
+    .plan-grid .card { min-height: 100%; }
+    .link-panel {
+      margin-top: var(--space-6);
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-4);
+    }
+    .link-panel a {
+      display: block;
+      text-decoration: none;
+      padding: var(--space-5);
+      border-radius: var(--radius-xl);
+      background: var(--color-surface);
+      border: 1px solid oklch(from var(--color-text) l c h / 0.08);
+      box-shadow: var(--shadow-sm);
+      color: var(--color-text);
+    }
+    .link-panel a p {
+      color: var(--color-text-muted);
+      margin-top: .45rem;
+    }
+    @media (max-width: 900px) {
+      .plan-grid, .link-panel { grid-template-columns: 1fr; }
+    }
+
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#main">İçeriğe geç</a>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="./index.html" aria-label="Adrasan Engin Kaptan ana sayfa">
+      <img src="./assets/images/logo/engin-kaptan-logo.png" alt="Adrasan Engin Kaptan logosu" width="100" height="100">
+      <span class="brand-mark">
+        <strong>Engin Kaptan</strong>
+        <span>Adrasan Tekne Turu &amp; Konaklama</span>
+      </span>
+    </a>
+    <nav aria-label="Ana menü">
+      <button class="menu-toggle" data-menu-toggle aria-label="Menüyü aç" aria-expanded="false">☰</button>
+      <div class="nav-links" data-menu>
+        <a href="./index.html">Ana Sayfa</a>
+        <a href="./suluada-turu.html">Suluada Turu</a>
+        <a href="./ozel-tur.html">Özel Tur</a>
+        <a href="./eylul-apart.html">Eylül Apart</a>
+        <a href="./galeri.html">Fotoğraflar</a>
+        <a href="./iletisim.html">İletişim</a>
+        <a href="./video-galeri.html">Videolar</a>
+        <a href="./merak-edilenler.html">Merak Edilenler</a>
+        <a href="./adrasan-ve-koylar.html" class="active">Adrasan ve Koylar</a>
+      </div>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" data-theme-toggle aria-label="Tema değiştir"></button>
+      <a class="btn btn-primary" href="https://wa.me/905323328476" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" style="min-height:46vh">
+    <div class="container hero-grid" style="align-items:center">
+      <div class="hero-copy reveal">
+        <span class="kicker">Adrasan ve Koylar</span>
+        <h1>Adrasan'ın turkuaz koylarını tek tek tanıyın.</h1>
+        <p>Adrasan, Antalya'nın Kumluca ilçesine bağlı; sakin denizi, çam ormanlarıyla çevrili kıyıları ve tekneyle ulaşılabilen koyları ile öne çıkan bir sahil bölgesidir. Mevcut site içeriğinde rota noktaları olarak Suluada, Akseki, Sazak, Ceneviz ve Korsan Koyu öne çıkarılıyor; bu sayfa o koyları daha ayrıntılı tanıtmak için hazırlandı. </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://wa.me/905323328476" target="_blank" rel="noopener noreferrer">Rota hakkında sor</a>
+          <a class="btn btn-secondary" href="#koy-basliklari">Koyları incele</a>
+        </div>
+        <div class="hero-meta">
+          <span>Adrasan</span>
+          <span>Kumluca / Antalya</span>
+          <span>Tekne turu rotaları</span>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="hero-card">
+          <img src="./assets/images/hero/suluada-hero.jpg" alt="Adrasan ve Suluada çevresinde berrak deniz" width="1366" height="768">
+        </div>
+        <div class="floating-card">
+          <span class="badge">Rota Bilgisi</span>
+          <p>Adrasan çıkışlı günlük turlarda birden fazla koy aynı gün içinde görülebilir. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-intro reveal">
+        <div>
+          <span class="kicker">Adrasan Hakkında</span>
+          <h2>Doğa, deniz ve sakinlik bir arada</h2>
+        </div>
+        <p>Site adres bilgilerinde Adrasan, Kumluca / Antalya olarak tanımlanıyor ve tüm tur anlatımı bu sahil hattı üzerinden kuruluyor. Adrasan'ın öne çıkan karakteri; berrak su, dağla denizin birleştiği manzara ve tekneyle keşfedilen koy çeşitliliğidir. </p>
+      </div>
+
+      <div class="plan-grid reveal">
+        <article class="card">
+          <span class="stat">Yüzme</span>
+          <h3>Hangi koylar daha çok yüzme odaklı?</h3>
+          <p>Suluada ve Akseki gibi açık tonlu, berrak su hissi veren duraklar yüzme molası seven misafirler için öne çıkar.</p>
+        </article>
+        <article class="card">
+          <span class="stat">Fotoğraf</span>
+          <h3>En güçlü manzara nerede?</h3>
+          <p>Suluada, Korsan Koyu ve mağara çevresi fotoğraf ve video açısından en çok akılda kalan sahneleri üretir.</p>
+        </article>
+        <article class="card">
+          <span class="stat">Aile</span>
+          <h3>Aileler için nasıl plan yapılmalı?</h3>
+          <p>Çocuklu aileler için sakin tempolu günler, erken hazırlık ve önceden rota bilgisi almak en rahat seçenektir.</p>
+        </article>
+      </div>
+
+      <div class="facts-grid">
+        <article class="card reveal">
+          <span class="stat">01</span>
+          <h3>Doğal yapı</h3>
+          <p>Çam ormanları, kayalık kıyılar ve açık renkli su tonları bölgenin en güçlü görsel karakterini oluşturur.</p>
+        </article>
+        <article class="card reveal">
+          <span class="stat">02</span>
+          <h3>Tur rotası</h3>
+          <p>Mevcut rota anlatımında Suluada, Akseki, Sazak, Ceneviz ve Korsan Koyu öne çıkar. </p>
+        </article>
+        <article class="card reveal">
+          <span class="stat">03</span>
+          <h3>Konum</h3>
+          <p>Adrasan, Kumluca / Antalya hattında yer alır ve ulaşım planı bu merkez üzerinden yapılır. </p>
+        </article>
+        <article class="card reveal">
+          <span class="stat">04</span>
+          <h3>Deneyim</h3>
+          <p>Yüzme, fotoğraf çekimi, sakin koylarda mola ve gün boyu tekne üzerinde gezi deneyimi sunar.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="koy-basliklari">
+    <div class="container detail-grid">
+      <aside class="reveal">
+        <div class="side-card">
+          <span class="kicker">İçindekiler</span>
+          <h2 style="font-size:var(--text-xl);margin-top:.35rem">Koy Başlıkları</h2>
+          <div class="toc-list">
+            <a href="#suluada">Suluada</a>
+            <a href="#akseki">Akseki Koyu</a>
+            <a href="#sazak">Sazak Koyu</a>
+            <a href="#ceneviz">Ceneviz Koyu</a>
+            <a href="#korsan">Korsan Koyu</a>
+          </div>
+          <div class="mini-map">
+            Adrasan merkez adres bilgileri mevcut site içeriğinde 229. Sokak, Kumluca / Antalya olarak geçiyor; tekne turlarının planlaması da bu bölge üzerinden yapılıyor. 
+          </div>
+        </div>
+      </aside>
+
+      <div class="koy-stack reveal">
+        <article class="koy-card" id="suluada">
+          <div class="koy-media">
+            <img src="./assets/images/hero/suluada-hero.jpg" alt="Suluada kıyıları ve turkuaz deniz" width="1366" height="768" loading="lazy">
+          </div>
+          <div class="koy-body">
+            <span class="kicker">1. Durak</span>
+            <h3>Suluada</h3>
+            <p>Mevcut ana sayfa içeriğinde Suluada, rota listesinin ilk ve en güçlü durağı olarak öne çıkarılıyor ve “Türkiye'nin Maldivleri” ifadesiyle tanımlanıyor. Görsel içeriklerde de beyaz kıyı şeridi ve açık mavi su tonlarıyla en dikkat çekici noktalardan biri olarak sunuluyor. </p>
+            <p>Suluada'nın etkileyici yanı sadece fotojenik görünümü değildir; su rengindeki berraklık ve açık ton geçişleri, tekne turuna katılan misafirlerin en çok hatırladığı duraklardan biri olmasını sağlar. Özellikle ilk kez gelen ziyaretçiler için Adrasan turunun en sembolik görüntüsü genellikle buradan çıkar.</p>
+            <div class="tags-row"><span>Yüzme</span><span>Fotoğraf</span><span>İlk kez gelenler</span></div>
+            <div class="tags-row"><span>Uzun mola</span><span>Dinlenme</span><span>Öğle molası</span></div>
+            <div class="tags-row"><span>Sakin tempo</span><span>Doğa</span><span>Rota çeşitliliği</span></div>
+            <div class="tags-row"><span>Atmosfer</span><span>Tarih hissi</span><span>Fotoğraf</span></div>
+            <div class="tags-row"><span>Mağaralar</span><span>Kayalık kıyı</span><span>Macera hissi</span></div>
+            <div class="koy-points">
+              <div class="koy-point"><strong>Neden öne çıkar?</strong><span>Berrak su, açık kıyı görünümü ve fotoğraf açısından güçlü manzara sunar. </span></div>
+              <div class="koy-point"><strong>Kimler sever?</strong><span>İlk kez Adrasan'a gelenler, yüzme molasını ön planda tutanlar ve manzara fotoğrafı çekenler.</span></div>
+              <div class="koy-point"><strong>Nasıl bir his verir?</strong><span>Renkleri nedeniyle daha tropik ve açık tonlu bir koy deneyimi hissi verir.</span></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="koy-card" id="akseki">
+          <div class="koy-media">
+            <img src="./assets/images/boat/tekne-turkuaz-koy.jpg" alt="Akseki Koyu çevresinde turkuaz su" width="1366" height="768" loading="lazy">
+          </div>
+          <div class="koy-body">
+            <span class="kicker">2. Durak</span>
+            <h3>Akseki Koyu</h3>
+            <p>Rota anlatımında Akseki Koyu ikinci durak olarak yer alıyor ve ana sayfada burada öğle yemeği molası vurgulanıyor. Bu detay, koyun sadece kısa bir seyir noktası değil, daha uzun soluklu dinlenme ve keyif alanı olarak kullanıldığını gösteriyor. </p>
+            <p>Akseki Koyu genellikle gün içindeki ritmi dengeleyen yerlerden biri gibi düşünülür: hem yüzme hem dinlenme hem de tekne üzerinde daha sakin zaman geçirmek için uygun bir bölüm oluşturur. Su tonu ve kıyı hattı bakımından turkuaz koy karakterini güçlü şekilde taşır.</p>
+            <div class="koy-points">
+              <div class="koy-point"><strong>Tur içindeki rolü</strong><span>Öğle yemeği ve daha uzun mola ile günün merkez duraklarından biridir. </span></div>
+              <div class="koy-point"><strong>Öne çıkan tarafı</strong><span>Yüzme ve dinlenme dengesini iyi kuran, sakin tempolu bir koy hissi verir.</span></div>
+              <div class="koy-point"><strong>Kimin için uygun?</strong><span>Uzun mola, güneşlenme ve daha rahat tekne deneyimi isteyen misafirler için uygundur.</span></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="koy-card" id="sazak">
+          <div class="koy-media">
+            <img src="./assets/images/hero/private-tour-hero.jpg" alt="Sazak Koyu rotasında özel tekne görüntüsü" width="1366" height="768" loading="lazy">
+          </div>
+          <div class="koy-body">
+            <span class="kicker">3. Durak</span>
+            <h3>Sazak Koyu</h3>
+            <p>Sazak Koyu rota diziliminde üçüncü ana durak olarak veriliyor. Doğrudan tanıtım cümlesi kısa olsa da rota içinde yer alması, Suluada ve Akseki sonrasında turun çeşitliliğini artıran bir geçiş noktası olduğunu gösteriyor. </p>
+            <p>Sazak Koyu'nun hissi genellikle daha doğal, daha sakin ve rota bütünlüğünü tamamlayan bir ara durak gibidir. Kalabalık yerine koy çeşitliliğine önem veren misafirler için turun karakterini güçlendiren bölümlerden biri sayılır.</p>
+            <div class="koy-points">
+              <div class="koy-point"><strong>Neden önemli?</strong><span>Turun tek duraklı değil, çok noktalı bir gezi olduğunu hissettiren duraklardan biridir. </span></div>
+              <div class="koy-point"><strong>Doğal karakter</strong><span>Daha sakin kıyı hissi ve rotada çeşitlilik arayanlar için değerli bir duraktır.</span></div>
+              <div class="koy-point"><strong>Deneyim</strong><span>Günün temposunu yormadan sürdüren, deniz ve manzara bütünlüğü sunan bir koy etkisi yaratır.</span></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="koy-card" id="ceneviz">
+          <div class="koy-media">
+            <img src="./assets/images/boat/tekne-turkuaz-koy.jpg" alt="Ceneviz Koyu çevresinde sakin deniz" width="1366" height="768" loading="lazy">
+          </div>
+          <div class="koy-body">
+            <span class="kicker">4. Durak</span>
+            <h3>Ceneviz Koyu</h3>
+            <p>Ceneviz Koyu hem rota listesinde hem de eski galeri içeriğinde adı geçen başlıca koylardan biridir. Bu durum, koyun yalnızca rota üzerinde bulunmadığını; görsel olarak da tanıtıma değer görüldüğünü gösterir. </p>
+            <p>Ceneviz Koyu adıyla birlikte tarih duygusu çağrıştıran bir etki bırakır ve rota içinde farklı bir atmosfer hissi yaratır. Doğal yapı, kıyı formu ve sakin su görünümüyle, özellikle “sadece yüzme değil, bölgenin karakterini de görmek istiyorum” diyen misafirlere hitap eder.</p>
+            <div class="koy-points">
+              <div class="koy-point"><strong>Öne çıkan tarafı</strong><span>Adı ve atmosferi nedeniyle rota içinde daha karakterli ve akılda kalıcı duraklardan biridir. </span></div>
+              <div class="koy-point"><strong>Görsel etki</strong><span>Eski galeri içeriğinde ayrı başlıkla sunulması, fotoğraf değeri taşıdığını gösterir. </span></div>
+              <div class="koy-point"><strong>Kimler için?</strong><span>Rota içinde farklı karakterde koylar görmek isteyen misafirler için ilgi çekicidir.</span></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="koy-card" id="korsan">
+          <div class="koy-media">
+            <img src="./assets/images/hero/private-tour-hero.jpg" alt="Korsan Koyu ve mağaralar çevresinde tekne" width="1366" height="768" loading="lazy">
+          </div>
+          <div class="koy-body">
+            <span class="kicker">5. Durak</span>
+            <h3>Korsan Koyu</h3>
+            <p>Korsan Koyu rota listesindeki son önemli duraklardan biridir ve ana sayfa içeriğinde mağaralarla birlikte anılır. Eski galeri içeriğinde de “Korsan Koyu ve mağaralar” başlığı kullanıldığı için bu bölgenin en dikkat çekici özelliğinin kayalık yapı ve mağara çevresi olduğu anlaşılır. </p>
+            <p>Bu koy, klasik yüzme koyu hissinin ötesine geçen daha dramatik bir doğal görünüm sunar. Kayalık çevre, mağara etkisi ve mavi tonların sert kıyı formuyla birleşmesi, burayı özellikle tekne turunun en maceralı ve hikâyesi olan noktalarından biri hâline getirir.</p>
+            <div class="koy-points">
+              <div class="koy-point"><strong>Neden farklı?</strong><span>Mağaralar ve kayalık kıyı yapısı ile rota içinde daha dramatik bir doğa hissi verir. </span></div>
+              <div class="koy-point"><strong>Görsel karakter</strong><span>Fotoğraf ve video içeriklerinde güçlü sahne değeri oluşturan noktalardan biridir.</span></div>
+              <div class="koy-point"><strong>Kimler etkilenir?</strong><span>Sade kumsal yerine mağara, kaya ve daha çarpıcı kıyı yapıları görmek isteyenler.</span></div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-intro reveal">
+        <div>
+          <span class="kicker">Geziyi Planlayın</span>
+          <h2>Adrasan programınızı tamamlayacak sayfalar</h2>
+        </div>
+        <p>Koyları tanıdıktan sonra tur tipi, hazırlık aşaması ve konaklama detaylarını ilgili sayfalardan inceleyebilirsiniz.</p>
+      </div>
+      <div class="link-panel reveal">
+        <a href="./suluada-turu.html">
+          <strong>Suluada Turu</strong>
+          <p>Günlük turun akışı, genel rota ve rezervasyon bilgileri.</p>
+        </a>
+        <a href="./ozel-tur.html">
+          <strong>Özel Tur</strong>
+          <p>Daha sakin, daha esnek ve size özel rota planlaması.</p>
+        </a>
+        <a href="./merak-edilenler.html">
+          <strong>Merak Edilenler</strong>
+          <p>Hazırlık, çocuklar, hijyen, sağlık ve ulaşım hakkında ayrıntılı bilgiler.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="cta reveal">
+        <span class="kicker">Adrasan Rotaları</span>
+        <h2>Bu koyları yerinde görmek için bizimle iletişime geçin.</h2>
+        <p>Hangi koyların görüleceği, tur tipi ve gün planı hakkında bilgi almak için bize yazabilirsiniz. Standart tur, özel tur ve konaklama planlaması tek iletişim üzerinden yapılabilir. </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://wa.me/905323328476" target="_blank" rel="noopener noreferrer">WhatsApp ile yaz</a>
+          <a class="btn btn-secondary" href="./suluada-turu.html">Suluada Turu</a>
+          <a class="btn btn-secondary" href="./ozel-tur.html">Özel Tur</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <img src="./assets/images/logo/logo-small.png" alt="Adrasan Engin Kaptan logosu" width="200" height="70">
+      <strong>Adrasan Engin Kaptan</strong>
+      <p>Adrasan çıkışlı Suluada tekne turları, özel tekne organizasyonları ve aile dostu konaklama seçenekleri. Antalya - Kumluca - Adrasan.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Alt menü">
+      <a href="./suluada-turu.html">Suluada Turu</a>
+      <a href="./ozel-tur.html">Özel Tur</a>
+      <a href="./eylul-apart.html">Eylül Apart</a>
+      <a href="./galeri.html">Fotoğraflar</a>
+      <a href="./iletisim.html">İletişim</a>
+      <a href="./video-galeri.html">Videolar</a>
+      <a href="./merak-edilenler.html">Merak Edilenler</a>
+      <a href="./adrasan-ve-koylar.html">Adrasan ve Koylar</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="./script.js" defer></script>
+</body>
+</html>
