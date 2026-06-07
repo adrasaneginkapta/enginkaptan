@@ -3,129 +3,88 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Merak Edilenler | Adrasan Engin Kaptan</title>
-  <meta name="description" content="Adrasan, Suluada tekne turları, hazırlık önerileri, çocuklu aileler, hijyen, ulaşım, sağlık ve rezervasyon hakkında ayrıntılı sık sorulan sorular.">
-  <meta name="keywords" content="Adrasan Sık Sorulan Sorular, Suluada Tur Hazırlık, Adrasan Ulaşım, Tekne Turu Çocuklu Aile, Hijyen Bilgisi">
+  <title>Video Galeri | Adrasan Engin Kaptan</title>
+  <meta name="description" content="Adrasan ve Suluada tekne turu videoları. Engin Kaptan YouTube kanalında Türkiye'nin en güzel koylarından canlı görüntüler.">
+  <meta name="keywords" content="Adrasan Tekne Turu Video, Suluada Video, Engin Kaptan YouTube, Adrasan Drone Çekimi">
   <meta name="author" content="Engin Kaptan">
   <meta name="robots" content="index, follow">
-  <meta property="og:title" content="Merak Edilenler | Adrasan Engin Kaptan">
-  <meta property="og:description" content="Tekne turu, özel tur, hazırlık, hijyen, çocuklar, sağlık ve ulaşım hakkında ayrıntılı bilgiler.">
+  <meta property="og:title" content="Video Galeri | Adrasan Engin Kaptan">
+  <meta property="og:description" content="Adrasan ve Suluada'dan tekne turu videoları.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.enginkaptan.com.tr/merak-edilenler.html">
-  <link rel="canonical" href="https://www.enginkaptan.com.tr/merak-edilenler.html">
+  <meta property="og:url" content="https://www.enginkaptan.com.tr/video-galeri.html">
+  <link rel="canonical" href="https://www.enginkaptan.com.tr/video-galeri.html">
   <link rel="icon" href="./assets/images/logo/favicon.ico">
   <link rel="apple-touch-icon" href="./assets/images/logo/apple-touch.png">
   <link rel="preconnect" href="https://api.fontshare.com">
   <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=boska@400,500,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/styles.css">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Suluada tekne turuna gelmeden önce neler hazırlanmalı?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Mayo, havlu, güneş kremi, şapka, güneş gözlüğü, terlik, yedek kıyafet, telefon için suya dayanıklı kılıf ve kişisel ilaçlarınızı getirmeniz önerilir."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Çocuklarla tekne turuna katılabilir miyiz?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Evet. Çocuklu aileler düzenli olarak katılır. Çocukların yaşı, yüzme durumu ve güneşe hassasiyeti dikkate alınarak hazırlık yapılması önerilir."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Adrasan'a ulaşım nasıl sağlanır?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Adrasan'a özel araçla, Antalya Havalimanı üzerinden araç kiralayarak veya otobüsle Kumluca yönüne gelip sonrasında transfer ile ulaşabilirsiniz."
-        }
-      }
-    ]
-  }
-  </script>
   <style>
-    .faq-layout {
+    /* ── Video grid ── */
+    .video-grid {
       display: grid;
-      grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
-      gap: var(--space-8);
-      align-items: start;
+      grid-template-columns: repeat(auto-fill, minmax(min(340px, 100%), 1fr));
+      gap: var(--space-6);
     }
-    .toc-card,
-    .faq-card,
-    .info-card {
+    .video-card {
+      background: var(--color-surface);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      border: 1px solid oklch(from var(--color-text) l c h / 0.08);
+      box-shadow: var(--shadow-sm);
+      transition: box-shadow var(--transition-interactive), transform var(--transition-interactive);
+    }
+    .video-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-3px); }
+    .video-thumb {
+      position: relative;
+      aspect-ratio: 16/9;
+      background: var(--color-surface-offset);
+      overflow: hidden;
+    }
+    .video-thumb iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+    .video-thumb-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-3);
+      color: var(--color-text-faint);
+    }
+    .video-thumb-placeholder svg { width: 48px; height: 48px; }
+    .video-info { padding: var(--space-5); }
+    .video-info h3 { font-size: var(--text-base); font-weight: 600; margin-bottom: var(--space-2); color: var(--color-text); }
+    .video-info p { font-size: var(--text-sm); color: var(--color-text-muted); }
+
+    /* ── YouTube CTA ── */
+    .youtube-cta {
+      display: flex;
+      align-items: center;
+      gap: var(--space-6);
       background: var(--color-surface);
       border: 1px solid oklch(from var(--color-text) l c h / 0.08);
       border-radius: var(--radius-xl);
-      box-shadow: var(--shadow-sm);
+      padding: var(--space-8) var(--space-10);
+      box-shadow: var(--shadow-md);
     }
-    .toc-card,
-    .info-card { padding: var(--space-6); position: sticky; top: calc(var(--space-16) + 24px); }
-    .toc-list {
-      display: grid;
-      gap: var(--space-2);
-      margin-top: var(--space-4);
-    }
-    .toc-list a {
-      display: block;
-      padding: var(--space-3) var(--space-4);
-      border-radius: var(--radius-md);
-      color: var(--color-text-muted);
-      text-decoration: none;
-      background: var(--color-surface-offset);
-    }
-    .toc-list a:hover { color: var(--color-text); background: var(--color-primary-highlight); }
-
-    .faq-section { scroll-margin-top: 120px; }
-    .faq-stack { display: grid; gap: var(--space-4); }
-    .faq-card { padding: var(--space-5) var(--space-5); }
-    .faq-card h3 { font-size: var(--text-lg); margin-bottom: var(--space-2); }
-    .faq-card p { color: var(--color-text-muted); }
-    .faq-card ul { margin-top: var(--space-3); padding-left: 1.1rem; color: var(--color-text-muted); }
-    .faq-card li + li { margin-top: .45rem; }
-    .faq-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: .45rem;
-      padding: .45rem .8rem;
-      border-radius: 999px;
-      font-size: var(--text-xs);
-      color: var(--color-primary);
-      background: var(--color-primary-highlight);
-      margin-bottom: var(--space-3);
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: .06em;
-    }
-    .faq-highlight-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: var(--space-4);
-    }
-    .faq-highlight-grid .card { min-height: 100%; }
-
-    .mini-note {
-      margin-top: var(--space-4);
-      padding: var(--space-4);
+    .youtube-icon {
+      flex-shrink: 0;
+      width: 64px;
+      height: 64px;
+      background: #ff0000;
       border-radius: var(--radius-lg);
-      background: var(--color-surface-offset);
-      color: var(--color-text-muted);
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-
-    @media (max-width: 980px) {
-      .faq-layout { grid-template-columns: 1fr; }
-      .toc-card,
-      .info-card { position: static; }
-      .faq-highlight-grid { grid-template-columns: repeat(2, 1fr); }
-    }
-    @media (max-width: 640px) {
-      .faq-highlight-grid { grid-template-columns: 1fr; }
+    .youtube-icon svg { width: 32px; height: 32px; fill: #fff; }
+    @media (max-width: 600px) {
+      .youtube-cta { flex-direction: column; text-align: center; padding: var(--space-6); }
     }
   </style>
 </head>
@@ -133,6 +92,7 @@
 
 <a class="skip-link" href="#main">İçeriğe geç</a>
 
+<!-- HEADER -->
 <header class="site-header">
   <div class="container nav-wrap">
     <a class="brand" href="./index.html" aria-label="Adrasan Engin Kaptan ana sayfa">
@@ -151,260 +111,158 @@
         <a href="./eylul-apart.html">Eylül Apart</a>
         <a href="./galeri.html">Fotoğraflar</a>
         <a href="./iletisim.html">İletişim</a>
-        <a href="./video-galeri.html">Videolar</a>
-        <a href="./merak-edilenler.html" class="active">Merak Edilenler</a>
+        <a href="./video-galeri.html" class="active">Videolar</a>
+        <a href="./blog.html">Merak Edilenler</a>
       </div>
     </nav>
     <div class="nav-actions">
       <button class="theme-toggle" data-theme-toggle aria-label="Tema değiştir"></button>
-      <a class="btn btn-primary" href="https://wa.me/905323328476" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      <a class="btn btn-primary" href="https://wa.me/905323328476" target="_blank" rel="noopener noreferrer">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.134.558 4.133 1.533 5.866L0 24l6.334-1.513A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.8 9.8 0 01-5.021-1.38l-.36-.214-3.754.897.947-3.656-.235-.374A9.8 9.8 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+        WhatsApp
+      </a>
     </div>
   </div>
 </header>
 
 <main id="main">
 
-  <section class="hero" style="min-height:48vh">
+  <!-- ════ HERO ════ -->
+  <section class="hero" style="min-height:40vh">
     <div class="container hero-grid" style="align-items:center">
       <div class="hero-copy reveal">
-        <span class="kicker">Merak Edilenler</span>
-        <h1>Gelmeden önce aklınıza takılabilecek her şey tek yerde.</h1>
-        <p>Hazırlık aşaması, rota, çocuklarla katılım, hijyen, sağlık, ulaşım, mevsim seçimi ve grup planlaması gibi en çok sorulan konuları tek bir ayrıntılı rehberde topladık.</p>
+        <span class="kicker">Video Galeri</span>
+        <h1>Adrasan ve Suluada'dan canlı görüntüler.</h1>
+        <p>Drone çekimleri, tekne turu kayıtları ve Suluada'nın berrak sularından seçilmiş videolar. Görmeden inanmak zor — izleyin, sonra karar verin.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="https://wa.me/905323328476" target="_blank" rel="noopener noreferrer">Sorunuzu WhatsApp'tan yazın</a>
-          <a class="btn btn-secondary" href="#sss-basliklari">SSS bölümlerine geç</a>
+          <a class="btn btn-primary" href="https://www.youtube.com/@adrasantekneturuenginkaptan" target="_blank" rel="noopener noreferrer">YouTube Kanalı</a>
+          <a class="btn btn-secondary" href="./galeri.html">Fotoğraflara bak</a>
         </div>
         <div class="hero-meta">
-          <span>Hazırlık rehberi</span>
-          <span>Aile dostu bilgi</span>
-          <span>Ulaşım ve hijyen</span>
+          <span>Drone çekimleri</span>
+          <span>Suluada</span>
+          <span>Tekne turları</span>
         </div>
       </div>
       <div class="hero-visual reveal">
         <div class="hero-card">
-          <img src="./assets/images/hero/suluada-hero.jpg" alt="Suluada'nın berrak suları ve tur tekneleri" width="1366" height="768">
+          <img src="./assets/images/hero/suluada-hero.jpg" alt="Suluada hava görüntüsü" width="1366" height="768">
         </div>
         <div class="floating-card">
-          <span class="badge">Planlama Kolaylığı</span>
-          <p>Önceden hazırlık yapan misafirler tur gününü çok daha rahat geçirir.</p>
+          <span class="badge">YouTube'da</span>
+          <p>Tüm videolara YouTube kanalımızdan ulaşabilirsiniz.</p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- ════ VİDEO KARELER ════ -->
   <section class="section section-alt">
     <div class="container">
       <div class="section-intro reveal">
         <div>
-          <span class="kicker">Kısa Özet</span>
-          <h2>İlk kez gelecek misafirler için en önemli başlıklar</h2>
+          <span class="kicker">Videolar</span>
+          <h2>Tekne turu videoları</h2>
         </div>
+        <p>Adrasan çıkışlı turlardan kayıtlar. Yeni videolar eklendikçe bu sayfa güncellenir.</p>
       </div>
-      <div class="faq-highlight-grid">
-        <article class="card reveal">
-          <span class="stat">01</span>
-          <h3>Yanınıza ne alın?</h3>
-          <p>Mayo, havlu, güneş koruyucu, terlik, yedek kıyafet, gözlük ve kişisel ilaçlar yeterlidir.</p>
+
+      <div class="video-grid">
+
+        <!-- Video 1 — YouTube embed -->
+        <article class="card video-card reveal" style="padding:0">
+          <div class="video-thumb">
+            <iframe
+              src="https://www.youtube.com/shorts/w-kbzYZFapY"
+              title="Adrasan Suluada Tekne Turu"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy">
+            </iframe>
+          </div>
+          <div class="video-info">
+            <h3>Suluada Tekne Turu</h3>
+            <p>Adrasan'dan kalkan tekne turunun tam kayıtı. Duraklar, yüzme molaları ve manzaralar.</p>
+          </div>
         </article>
-        <article class="card reveal">
-          <span class="stat">02</span>
-          <h3>Kimler rahat eder?</h3>
-          <p>Aileler, arkadaş grupları, çiftler ve sakin deniz deneyimi isteyen misafirler için uygundur.</p>
+
+        <!-- Video 2 — Placeholder (yeni video eklenince iframe ile değiştirin) -->
+        <article class="card video-card reveal" style="padding:0">
+          <div class="video-thumb">
+             <iframe
+              src="https://www.youtube.com/shorts/xVONbz-3uhw"
+              title="Adrasan Suluada Tekne Turu"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy">
+            </iframe>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polygon points="10,8 16,12 10,16" fill="currentColor" stroke="none"/></svg>
+              <span style="font-size:var(--text-sm)">Yakında yüklenecek</span>
+            </div>
+          </div>
+          <div class="video-info">
+            <h3>Suluada Drone Çekimi</h3>
+            <p>Havadan çekilen Suluada ve çevre koyların panoramik görüntüsü.</p>
+          </div>
         </article>
-        <article class="card reveal">
-          <span class="stat">03</span>
-          <h3>Ne zaman gelmeli?</h3>
-          <p>Haziran–Eylül en hareketli dönemdir; Mayıs ve Ekim ise daha sakin bir deneyim sunar.</p>
+
+        <!-- Video 3 — Placeholder -->
+        <article class="card video-card reveal" style="padding:0">
+          <div class="video-thumb">
+            <iframe
+              src="https://www.youtube.com/shorts/VKrMpHqvAwQ"
+              title="Adrasan Suluada Tekne Turu"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy">
+            </iframe>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polygon points="10,8 16,12 10,16" fill="currentColor" stroke="none"/></svg>
+              <span style="font-size:var(--text-sm)">Yakında yüklenecek</span>
+            </div>
+          </div>
+          <div class="video-info">
+            <h3>Özel Tekne Turu</h3>
+            <p>Mağaralar, berrak koylar ve Adrasan kıyısından özel tur görüntüleri.</p>
+          </div>
         </article>
-        <article class="card reveal">
-          <span class="stat">04</span>
-          <h3>Neden Engin Kaptan?</h3>
-          <p>Adrasan odağında tur, özel tekne ve konaklama seçeneklerini tek iletişim noktasında birleştirir.</p>
-        </article>
+
       </div>
     </div>
   </section>
 
-  <section class="section" id="sss-basliklari">
-    <div class="container faq-layout">
-      <aside class="reveal">
-        <div class="toc-card">
-          <span class="kicker">İçerik</span>
-          <h2 style="font-size:var(--text-xl);margin-top:.35rem">Başlıklar</h2>
-          <div class="toc-list">
-            <a href="#hazirlik">Gelmeden önce hazırlık</a>
-            <a href="#mevsim">Mevsim ve en iyi dönem</a>
-            <a href="#rota">Koylar, tarih ve doğa</a>
-            <a href="#cocuk">Çocuklar ve aileler</a>
-            <a href="#saglik">Sağlık ve alerjen bilgisi</a>
-            <a href="#ulasim">Ulaşım ve varış</a>
-            <a href="#grup">Grup büyüklüğü ve rezervasyon</a>
-            <a href="#hijyen">Hijyen ve temizlik</a>
-            <a href="#neden-biz">Neden bizi tercih etmelisiniz?</a>
-          </div>
+  <!-- ════ YOUTUBE CTA ════ -->
+  <section class="section">
+    <div class="container reveal">
+      <div class="youtube-cta">
+        <div class="youtube-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
         </div>
-        <div class="info-card" style="margin-top:var(--space-4)">
-          <span class="kicker">Hızlı İletişim</span>
-          <h3 style="font-size:var(--text-lg);margin:.35rem 0 .7rem">Kararsız kaldığınız noktaları doğrudan sorabilirsiniz.</h3>
-          <p style="color:var(--color-text-muted)">Özellikle çocuklu aileler, sağlık hassasiyeti olan misafirler ve özel grup planlayanlar için tur öncesi kısa bir yazışma çok faydalı olur.</p>
+        <div style="flex:1">
+          <span class="kicker">YouTube Kanalı</span>
+          <h2 style="font-size:var(--text-xl);margin:.3rem 0 .6rem">Tüm videolara YouTube'dan ulaşın.</h2>
+          <p style="color:var(--color-text-muted)">Yeni çekimler ve tur kayıtları düzenli olarak kanalımıza yükleniyor. Abone olarak bildirim alabilirsiniz.</p>
           <div class="hero-actions" style="margin-top:1rem">
-            <a class="btn btn-primary" href="https://wa.me/905323328476" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-            <a class="btn btn-secondary" href="tel:+905323328476">Ara</a>
+            <a class="btn btn-primary" href="https://www.youtube.com/@adrasantekneturuenginkaptan" target="_blank" rel="noopener noreferrer">Kanala git &amp; abone ol</a>
           </div>
         </div>
-      </aside>
-
-      <div class="faq-stack reveal">
-
-        <section class="faq-section" id="hazirlik">
-          <div class="faq-card">
-            <span class="faq-badge">Hazırlık</span>
-            <h3>Gelmeden önce nasıl hazırlanmalıyım?</h3>
-            <p>En rahat gün geçirmek için plaj günü mantığıyla hazırlanmanız yeterlidir. Güneş ve deniz ağırlıklı bir gün olacağı için hafif, çabuk kuruyan ve hareket kolaylığı sağlayan eşyalar tercih edilmelidir.</p>
-            <ul>
-              <li>Mayo veya deniz şortu, havlu ve yedek kıyafet getirin.</li>
-              <li>Yüksek koruma faktörlü güneş kremi, şapka ve güneş gözlüğü kullanın.</li>
-              <li>Islak zemin için kaymayan terlik veya deniz ayakkabısı faydalı olur.</li>
-              <li>Telefon ve cüzdan için suya dayanıklı küçük bir çanta taşımanız rahatlık sağlar.</li>
-              <li>Kişisel ilaçlarınızı, özellikle düzenli kullandığınız ilaçları mutlaka yanınıza alın.</li>
-            </ul>
-            <div class="mini-note">Sabah erken çıkış günlerinde bir gece önceden çanta hazırlamak, tur sabahını çok daha kolaylaştırır.</div>
-          </div>
-        </section>
-
-        <section class="faq-section" id="mevsim">
-          <div class="faq-card">
-            <span class="faq-badge">Mevsim</span>
-            <h3>Hangi mevsimde turlar daha keyiflidir?</h3>
-            <p>Bu sorunun cevabı beklentinize göre değişir. Canlı atmosfer, sıcak su ve tam yaz hissi isteyenler için Haziran, Temmuz, Ağustos ve Eylül öne çıkar; daha sakin, daha dingin ve fotoğraf odaklı bir deneyim isteyenler için Mayıs sonu ile Ekim başı çok keyifli olabilir.</p>
-            <ul>
-              <li><strong>Mayıs sonu – Haziran:</strong> Hava ferah, kalabalık görece daha az, deniz sezonu açılmış olur.</li>
-              <li><strong>Temmuz – Ağustos:</strong> En sıcak ve en yoğun dönemdir; yüzme molaları sevenler için çok uygundur.</li>
-              <li><strong>Eylül:</strong> Deniz genellikle sıcak kalır, yaz yoğunluğu biraz azalır, konforlu bir dönemdir.</li>
-              <li><strong>Ekim başı:</strong> Günlük hava durumuna bağlı olarak sakinlik arayan misafirler için hoş olabilir.</li>
-            </ul>
-            <div class="mini-note">Yoğun sezonda erken rezervasyon, sakin sezonda ise hava durumunu yakından takip etmek en doğru yaklaşımdır.</div>
-          </div>
-        </section>
-
-        <section class="faq-section" id="rota">
-          <div class="faq-card">
-            <span class="faq-badge">Doğa &amp; Rota</span>
-            <h3>Koylarda neler görülebilir, bölgenin doğası ve atmosferi nasıldır?</h3>
-            <p>Adrasan çıkışlı rotalarda berrak su, kayalık kıyılar, mağara çevreleri, turkuaz koylar ve sakin yüzme alanları öne çıkar. Mevcut site içeriğinde Suluada, Akseki, Sazak, Ceneviz ve Korsan Koyu rota noktaları olarak vurgulanıyor; bu da turun sadece tek bir durak değil, gün içine yayılan çok duraklı bir deneyim olduğunu gösteriyor. </p>
-            <ul>
-              <li>Suluada çevresi berrak su rengi ve açık tonlu sahil görünümü ile dikkat çeker. </li>
-              <li>Akseki, Sazak, Ceneviz ve Korsan Koyu gibi duraklar rota çeşitliliği sunar. </li>
-              <li>Mağara çevreleri ve kayalık kıyılar özellikle fotoğraf ve drone görüntülerinde çok etkileyici görünür. </li>
-              <li>Doğal yapı nedeniyle bazı alanlar gölge açısından sınırlı olabilir; bu yüzden güneş hazırlığı önemlidir.</li>
-            </ul>
-            <p>Bölgenin tanıtım dili genelde “Türkiye'nin Maldivleri” benzetmesi etrafında kuruluyor; bu da su renginin ve koy estetiğinin misafir deneyiminde merkezi bir rol oynadığını gösterir. </p>
-          </div>
-        </section>
-
-        <section class="faq-section" id="cocuk">
-          <div class="faq-card">
-            <span class="faq-badge">Aileler</span>
-            <h3>Çocuklarla gelmek uygun mu, nelere dikkat edilmeli?</h3>
-            <p>Evet, çocuklu aileler için uygun olabilir; ancak çocukların yaşı, yüzme alışkanlığı, güneş hassasiyeti ve tekne üzerinde geçirecekleri süre dikkate alınmalıdır. Çocuklarla rahat bir gün geçirmek için hazırlık planı biraz daha ayrıntılı yapılmalıdır.</p>
-            <ul>
-              <li>Küçük çocuklar için şapka, yedek kıyafet, ince havlu, atıştırmalık ve bol su taşıyın.</li>
-              <li>Çocuğunuz uzun süre güneşte kalmaya hassassa UV koruyucu kıyafet faydalı olabilir.</li>
-              <li>Deniz korkusu yaşayan veya yüzme bilmeyen çocuklar için tur öncesi bunu belirtmeniz önemlidir.</li>
-              <li>Özel tekne planlıyorsanız çocuklu aileler için tempo ve mola düzeni daha rahat organize edilebilir.</li>
-            </ul>
-            <div class="mini-note">Aileler için en rahat senaryo genellikle sabah hazırlığını erken tamamlayıp, çocukların güneş yoğunlaşmadan önce denize girmesidir.</div>
-          </div>
-        </section>
-
-        <section class="faq-section" id="saglik">
-          <div class="faq-card">
-            <span class="faq-badge">Sağlık</span>
-            <h3>Sağlık, alerjen ve hassasiyet durumlarında nelere dikkat edilmeli?</h3>
-            <p>Deniz tutması, güneş hassasiyeti, gıda alerjisi, böcek ısırıklarına karşı hassasiyet veya düzenli ilaç kullanımı gibi konular varsa turdan önce mutlaka bilgi vermeniz gerekir. Her misafirin sağlık durumu farklı olduğu için kısa bir ön bilgilendirme, tur gününün daha güvenli ve konforlu geçmesini sağlar.</p>
-            <ul>
-              <li>Deniz tutmasına yatkınsanız kendi doktorunuzun uygun gördüğü önlemleri seyahatten önce planlayın.</li>
-              <li>Gıda hassasiyetiniz veya alerjiniz varsa rezervasyon sırasında mutlaka yazın.</li>
-              <li>Astım, ciddi güneş hassasiyeti veya düzenli ilaç kullanımı varsa ilacınızı erişilebilir bir yerde taşıyın.</li>
-              <li>Arı, polen veya farklı dış ortam alerjileri için kişisel önlemlerinizi önceden alın.</li>
-            </ul>
-            <div class="mini-note">Bu sayfa tıbbi tavsiye yerine geçmez; özel sağlık durumlarında kişisel doktor önerisi esas alınmalıdır.</div>
-          </div>
-        </section>
-
-        <section class="faq-section" id="ulasim">
-          <div class="faq-card">
-            <span class="faq-badge">Ulaşım</span>
-            <h3>Adrasan'a ulaşım nasıl gerçekleşir?</h3>
-            <p>İşletmenin adresi Adrasan, 229. Sokak, 07350 Kumluca / Antalya 'dır; dolayısıyla ulaşım planı Antalya merkez, havalimanı veya Kumluca bağlantılı şekilde kurulabilir. </p>
-            <ul>
-              <li>Özel araçla geliyorsanız navigasyon üzerinden Adrasan yönüne rahatlıkla ulaşabilirsiniz.</li>
-              <li>Antalya Havalimanı üzerinden araç kiralama, transfer veya otobüs + yerel ulaşım kombinasyonu yapılabilir.</li>
-              <li>Kumluca yönünden gelen misafirler son etapta Adrasan sahiline iner.</li>
-              <li>Konaklama ile turu birleştiren misafirler için önce aparta yerleşip ertesi gün tura çıkmak daha konforlu olabilir.</li>
-            </ul>
-            <p>Seyir sırasında telefonumuz her zaman çekmeyebilir. Bu yüzden yol tarifi, buluşma noktası ve saat bilgilerini bir gün önceden netleştirmenizi öneriyoruz.</p>
-          </div>
-        </section>
-
-        <section class="faq-section" id="grup">
-          <div class="faq-card">
-            <span class="faq-badge">Gruplar</span>
-            <h3>Kaç kişilik gruplar ile gelinebilir?</h3>
-            <p>Standart günlük turlar bireysel veya küçük gruplar için uygundur; özel tekne planlarında ise aileler, arkadaş grupları veya kutlama amaçlı daha kontrollü programlar hazırlanabilir. Sitenin hizmet anlatımında standart tur ile özel turun ayrı ürünler olarak sunulması da bunu destekler. </p>
-            <ul>
-              <li>Çiftler ve küçük aileler standart tura rahatlıkla katılabilir.</li>
-              <li>Arkadaş grubu, doğum günü, özel kutlama veya daha sakin rota isteyenler için özel tur daha uygundur.</li>
-              <li>Kalabalık grup planlarında tarih teyidini erken yapmak gerekir.</li>
-			  
-              <li>Grup sayısına göre apart + tur kombinasyonu da planlanabilir. Sitede Eylül Apart için 1+1 ve 2+1 daire seçenekleri olduğu belirtiliyor. </li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="faq-section" id="hijyen">
-          <div class="faq-card">
-            <span class="faq-badge">Hijyen</span>
-            <h3>Hijyen ve temizlik konusunda neler bilmeliyim?</h3>
-            <p>Hem tekne turlarımızda hem de Eylül Apart'ta hijyen ve temizlik konusunda titiz davranıyoruz. Aile işletmesi olmanın getirdiği sorumlulukla her misafir için düzenli temizlik ve bakım süreçlerimizi kesintisiz sürdürüyoruz.</p>
-            <ul>
-              <li>Konaklama tarafında temiz, sakin ve aile dostu yapı vurgulanır. </li>
-              <li>Apartta klima, Wi‑Fi, mutfak ve temel yaşam alanı donanımları bulunduğu belirtilir. </li>
-              <li>Tur tarafında kişisel havlu, terlik ve yedek kıyafet taşımanız kendi hijyen konforunuzu artırır.</li>
-              <li>Çocuklu aileler için ıslak mendil, yedek havlu ve kişisel bakım ürünleri ayrıca önerilir.</li>
-            </ul>
-            <p>Hijyen algısında en büyük farkı, misafirin kendi hazırlığı ile işletmenin düzenli iletişimi birlikte oluşturur; bu nedenle özel beklentilerinizi rezervasyon öncesinde yazmanız en iyi yöntemdir.</p>
-          </div>
-        </section>
-
-        <section class="faq-section" id="neden-biz">
-          <div class="faq-card">
-            <span class="faq-badge">Tercih Nedeni</span>
-            <h3>Neden sizi tercih etmeliyim?</h3>
-            <p>Site içeriği Engin Kaptan'ı tekne turu, özel tur ve konaklamayı aynı çatı altında anlatan bir yapı ile sunuyor; bu, misafirin tek tek farklı işletmelerle uğraşmadan plan yapabilmesine yardımcı olur. </p>
-            <ul>
-              <li>Standart tur, özel tur ve konaklama seçenekleri birlikte düşünülmüş bir yapı sunulur. </li>
-              <li>Adrasan odaklı yerel deneyim dili kuvvetlidir; rota anlatımı net biçimde verilir. </li>
-              <li>İletişim tarafında doğrudan telefon ve WhatsApp erişimi bulunur. </li>
-              <li>Aile işletmesi, sakinlik ve temizlik vurgusu özellikle apart tarafında güven unsuru oluşturur. </li>
-            </ul>
-            <div class="mini-note">Kısacası avantaj yalnızca tekne turu değil; iletişim, rota çeşitliliği ve konaklamayı birlikte planlayabilme kolaylığıdır.</div>
-          </div>
-        </section>
-
       </div>
     </div>
   </section>
 
+  <!-- ════ CTA ════ -->
   <section class="section section-alt">
     <div class="container">
       <div class="cta reveal">
-        <span class="kicker">Hâlâ Sorunuz mu Var?</span>
-        <h2>Kısa bir mesajla planınızı netleştirelim.</h2>
-        <p>Tarih, kişi sayısı, çocuk durumu, özel sağlık hassasiyeti veya konaklama isteğinizi yazın; size en uygun seçenek daha hızlı belirlenir.</p>
+        <span class="kicker">Rezervasyon</span>
+        <h2>Bu güzellikleri kendiniz yaşayın.</h2>
+        <p>Videolarda gördüklerinizi bizzat deneyimlemek için rezervasyon yapın. Tarih ve kişi sayısını yazmanız yeterli.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="https://wa.me/905323328476" target="_blank" rel="noopener noreferrer">WhatsApp ile yaz</a>
-          <a class="btn btn-secondary" href="./iletisim.html">İletişim sayfası</a>
+          <a class="btn btn-primary" href="https://wa.me/905323328476" target="_blank" rel="noopener noreferrer">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.134.558 4.133 1.533 5.866L0 24l6.334-1.513A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.8 9.8 0 01-5.021-1.38l-.36-.214-3.754.897.947-3.656-.235-.374A9.8 9.8 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+            WhatsApp ile yaz
+          </a>
+          <a class="btn btn-secondary" href="./suluada-turu.html">Suluada Turu</a>
+          <a class="btn btn-secondary" href="./ozel-tur.html">Özel Tur</a>
         </div>
       </div>
     </div>
@@ -412,6 +270,7 @@
 
 </main>
 
+<!-- FOOTER -->
 <footer class="footer">
   <div class="container footer-grid">
     <div>
@@ -426,7 +285,7 @@
       <a href="./galeri.html">Fotoğraflar</a>
       <a href="./iletisim.html">İletişim</a>
       <a href="./video-galeri.html">Videolar</a>
-      <a href="./merak-edilenler.html">Merak Edilenler</a>
+      <a href="./blog.html">Merak Edilenler</a>
     </nav>
   </div>
 </footer>
