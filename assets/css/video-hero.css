@@ -1,413 +1,133 @@
-<!doctype html>
-<html lang="tr">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Adrasan Balık Avı Turu | Özel Tekneyle Olta | Engin Kaptan</title>
-  <meta name="description" content="Adrasan balık avı turu: Kumluca koyunda özel teknede olta ve dip avı. Suluada yüzme turu değil; sabah veya akşam, kaptanla mevsim balığı. Ekipman, süre ve rezervasyon için Engin Kaptan.">
-  <meta name="keywords" content="Adrasan balık avı, Adrasan balık avı turu, Adrasan olta turu, Kumluca balık avı tekne, Antalya balık avı tekne turu, Engin Kaptan balık avı, Adrasan özel balık avı, Likya balık avı">
-  <meta name="author" content="Engin Kaptan">
-  <meta name="robots" content="index, follow">
-  <meta name="geo.region" content="TR-07">
-  <meta name="geo.placename" content="Adrasan, Kumluca, Antalya">
-  <meta name="geo.position" content="36.3286;30.4706">
-  <meta name="ICBM" content="36.3286, 30.4706">
-  <meta name="language" content="Turkish">
-  <meta property="og:locale" content="tr_TR">
-  <meta property="og:title" content="Adrasan Balık Avı Turu | Engin Kaptan">
-  <meta property="og:description" content="Adrasan koyunda özel teknede balık avı. Olta, dip avı, mevsim balığı. WhatsApp ile rezervasyon.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.enginkaptan.com.tr/balik-avi.html">
-  <meta property="og:image" content="https://www.enginkaptan.com.tr/assets/images/hero/balik-avi-hero.jpg">
-  <meta property="og:site_name" content="Engin Kaptan Adrasan">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Adrasan Balık Avı Turu | Engin Kaptan">
-  <meta name="twitter:description" content="Kumluca–Adrasan koyunda özel tekneyle olta turu. Saat ve yem mevsimine göre değişir.">
-  <link rel="canonical" href="https://www.enginkaptan.com.tr/balik-avi.html">
-  <link rel="icon" href="./assets/images/logo/favicon.ico">
-  <link rel="apple-touch-icon" href="./assets/images/logo/apple-touch.png">
-  <link rel="preconnect" href="https://api.fontshare.com">
-  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&amp;f[]=boska@400,500,700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/styles.css">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "TouristTrip",
-        "@id": "https://www.enginkaptan.com.tr/balik-avi.html#trip",
-        "name": "Adrasan Balık Avı Turu",
-        "alternateName": ["Adrasan olta turu", "Adrasan özel balık avı", "Kumluca balık avı tekne"],
-        "description": "Adrasan (Kumluca, Antalya) çıkışlı özel teknede balık avı. Suluada yüzme turu değildir; olta ve dip avı, mevsim ve rüzgâra göre nokta seçilir.",
-        "touristType": ["Balık tutmayı sevenler", "Küçük gruplar", "Aileler", "Çiftler"],
-        "itinerary": {
-          "@type": "ItemList",
-          "itemListElement": [
-            {"@type": "ListItem", "position": 1, "name": "Adrasan iskelesinden kalkış"},
-            {"@type": "ListItem", "position": 2, "name": "Rüzgâr ve akıntıya göre av noktası"},
-            {"@type": "ListItem", "position": 3, "name": "Olta veya dip avı"},
-            {"@type": "ListItem", "position": 4, "name": "İskeleye dönüş"}
-          ]
-        },
-        "provider": {
-          "@type": "LocalBusiness",
-          "@id": "https://www.enginkaptan.com.tr/#business",
-          "name": "Engin Kaptan Adrasan Tekne Turu",
-          "url": "https://www.enginkaptan.com.tr",
-          "telephone": "+90 532 332 84 76",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Adrasan",
-            "addressLocality": "Kumluca",
-            "addressRegion": "Antalya",
-            "postalCode": "07350",
-            "addressCountry": "TR"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 36.3286,
-            "longitude": 30.4706
-          },
-          "areaServed": ["Adrasan", "Kumluca", "Olympos", "Çıralı", "Antalya"]
-        }
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Adrasan balık avı turu Suluada turundan ne farkı var?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Suluada turu yüzme, şnorkel ve koy molası içindir; öğle yemeği dahildir. Balık avı turu ayrı bir programdır: tekne av noktasına gider, olta veya dip avı yapılır. Aynı gün ikisini sıkıştırmak genelde doğru olmaz."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Adrasan balık avı turu saat kaçta kalkar?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Suluada gibi sabit 10:00 saati yoktur. Mevsim, rüzgâr ve balığın hareketine göre sabah erken veya öğleden sonra çıkılır. O günün saatini WhatsApp’tan teyit edin."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Ekipman dahil mi?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Teknede temel olta takımı bulunur. Kendi kamışınız varsa getirin, daha rahat edersiniz. Yem o güne göre konuşulur."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Balık garanti mi?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Hayır. Deniz, rüzgâr ve mevsim işi. Kaptan noktayı bilir; tutacağız diye söz vermeyiz. Koruma altındaki türler bırakılır."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Özel tur ile balık avı aynı mı?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Balık avı da özel teknedir; tekne size kalır. Ama amaç yüzme koyları değil avdır. Yüzme ve ada turu istiyorsanız özel tur veya Suluada sayfasına bakın."
-            }
-          }
-        ]
-      },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://www.enginkaptan.com.tr/"},
-          {"@type": "ListItem", "position": 2, "name": "Balık Avı", "item": "https://www.enginkaptan.com.tr/balik-avi.html"}
-        ]
-      }
-    ]
+/* Video hero — tam genişlik, yazı videonun üstünde, mobilde kopuk durmaz */
+.video-hero{
+  position:relative;
+  isolation:isolate;
+  width:100vw;
+  margin-left:calc(50% - 50vw);
+  min-height:min(86dvh, 780px);
+  display:grid;
+  align-items:end;
+  overflow:hidden;
+  color:#fff;
+  background:#07090c;
+}
+.video-hero-media{
+  position:absolute;
+  inset:0;
+  z-index:0;
+}
+.video-hero-media video,
+.video-hero-media img{
+  position:absolute;
+  inset:0;
+  width:100% !important;
+  height:100% !important;
+  max-width:none !important;
+  object-fit:cover;
+  object-position:center center;
+}
+.video-hero-overlay{
+  position:absolute;
+  inset:0;
+  z-index:1;
+  pointer-events:none;
+  background:
+    linear-gradient(180deg, rgba(0,0,0,.42) 0%, rgba(0,0,0,.22) 38%, rgba(0,0,0,.68) 100%);
+}
+.video-hero-content{
+  position:relative;
+  z-index:2;
+  width:min(calc(100% - 2rem), var(--content, 1180px));
+  margin-inline:auto;
+  padding:clamp(6.5rem, 12vw, 8.5rem) 0 clamp(2.4rem, 5vw, 3.6rem);
+}
+.video-hero .kicker{
+  background:rgba(255,255,255,.12);
+  color:#fff;
+  border:1px solid rgba(255,255,255,.22);
+  backdrop-filter:blur(10px);
+}
+.video-hero h1{
+  max-width:16ch;
+  color:#fff;
+  text-shadow:0 8px 32px rgba(0,0,0,.45);
+  margin-top:.75rem;
+}
+.video-hero p{
+  color:rgba(255,255,255,.9);
+  max-width:42ch;
+  margin-top:.9rem;
+  font-size:var(--text-lg, 1.125rem);
+  text-shadow:0 4px 18px rgba(0,0,0,.4);
+}
+.video-hero .hero-meta{margin-top:1.1rem}
+.video-hero .hero-meta span{
+  background:rgba(255,255,255,.1);
+  color:#fff;
+  border-color:rgba(255,255,255,.22);
+}
+.video-hero .breadcrumb{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.45rem;
+  font-size:var(--text-sm, .875rem);
+  color:rgba(255,255,255,.78);
+  margin-bottom:.85rem;
+}
+.video-hero .breadcrumb a{
+  color:#fff;
+  text-decoration:underline;
+  text-underline-offset:3px;
+}
+.btn-ghost{
+  background:rgba(255,255,255,.12);
+  color:#fff;
+  border:1px solid rgba(255,255,255,.38);
+  backdrop-filter:blur(8px);
+}
+.btn-ghost:hover{background:rgba(255,255,255,.22)}
+
+.site-header.is-transparent{
+  background:transparent;
+  border-bottom-color:transparent;
+  backdrop-filter:none;
+}
+.site-header.is-transparent .brand-mark strong,
+.site-header.is-transparent .brand-mark span,
+.site-header.is-transparent .nav-links a{color:#fff}
+.site-header.is-transparent .nav-links a:hover,
+.site-header.is-transparent .nav-links a.active{
+  background:rgba(255,255,255,.14);
+  color:#fff;
+  box-shadow:none;
+}
+.site-header.is-transparent .brand img{filter:none}
+
+@media (max-width: 980px){
+  .video-hero{
+    min-height:78dvh;
+    min-height:78svh;
+    align-items:end;
   }
-  </script>
-</head>
-<body>
-
-<a class="skip-link" href="#main">İçeriğe geç</a>
-
-<header class="site-header">
-  <div class="container nav-wrap">
-    <a class="brand" href="./index.html" aria-label="Adrasan Engin Kaptan ana sayfa">
-      <img src="./assets/images/logo/engin-kaptan-logo.png" alt="Adrasan Engin Kaptan logosu" width="100" height="100">
-      <span class="brand-mark">
-        <strong>Engin Kaptan</strong>
-        <span>Adrasan Tekne Turu &amp; Konaklama</span>
-      </span>
-    </a>
-    <nav aria-label="Ana menü">
-      <button class="menu-toggle" data-menu-toggle aria-label="Menüyü aç" aria-expanded="false">☰</button>
-      <div class="nav-links" data-menu>
-        <a href="./index.html">Ana Sayfa</a>
-        <a href="./suluada-turu.html">Suluada Turu</a>
-        <a href="./ozel-tur.html">Özel Tur</a>
-        <a href="./balik-avi.html" class="active">Balık Avı</a>
-        <a href="./sunset-turu.html">Sunset Turu</a>
-        <a href="./eylul-apart.html">Eylül Apart</a>
-        <a href="./galeri.html">Fotoğraflar</a>
-        <a href="./iletisim.html">İletişim</a>
-        <a href="./video-galeri.html">Videolar</a>
-        <a href="./blog.html">Merak Edilenler</a>
-      </div>
-    </nav>
-    <div class="nav-actions">
-      <button class="theme-toggle" data-theme-toggle aria-label="Tema değiştir"></button>
-      <a class="btn btn-primary" href="https://wa.me/905323328476?text=Merhaba%2C%20Adrasan%20balik%20avi%20turu%20icin%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer">WhatsApp</a>
-    </div>
-  </div>
-</header>
-
-<main id="main">
-
-  <section class="video-hero" aria-label="Adrasan balık avı video başlığı">
-    <div class="video-hero-media">
-      <video autoplay muted loop playsinline preload="metadata" poster="./assets/images/hero/balik-avi-hero.jpg" aria-hidden="true">
-        <source src="./assets/videos/balik-avi-hero.mp4" type="video/mp4">
-      </video>
-      <div class="video-hero-overlay" aria-hidden="true"></div>
-    </div>
-    <div class="container video-hero-content">
-      <nav class="breadcrumb" aria-label="Sayfa yolu">
-        <a href="./index.html">Ana Sayfa</a>
-        <span aria-hidden="true">/</span>
-        <span>Balık Avı</span>
-      </nav>
-      <span class="kicker">Adrasan • Kumluca • Olta turu</span>
-      <h1>Burada balık, koyun sessiz tarafında tutulur.</h1>
-      <p>Suluada yüzme turu değil. Tekne av noktasına gider; olta atılır, beklenir, bazen tutulur bazen tutulmaz. Kaptan yeri bilir, denizi abartmaz. Küçük grup, özel tekne, Adrasan iskelesinden.</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="https://wa.me/905323328476?text=Merhaba%2C%20Adrasan%20balik%20avi%20icin%20tarih%20ve%20kisi%20sayisi%20yaziyorum." target="_blank" rel="noopener noreferrer">Balık avı rezervasyonu</a>
-        <a class="btn btn-ghost" href="tel:+905323328476">📞 Hemen ara</a>
-      </div>
-      <div class="hero-meta">
-        <span>Özel tekne</span>
-        <span>Yaklaşık 4–6 saat</span>
-        <span>Saat mevsime göre değişir</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container split">
-      <div class="split-copy reveal prose">
-        <span class="kicker">Yerelden</span>
-        <h2>Adrasan’da av, ada turunun gürültüsünden ayrı durur.</h2>
-        <p>Kumluca’nın Adrasan koyu kapalıdır; yazın öğleden sonra meltem bazen sertleşir. Balık o saatte inat eder. O yüzden bu turu Suluada tekneleriyle aynı ritme koymuyoruz. Sabah erken veya rüzgârın düştüğü dilim; kaptan o gün bakıp söyler.</p>
-        <p>Nokta her gün aynı çizgi değil. Kayalık dip, akıntı, yem — üçü tutunca olta işe yarar. Palamut, akya, lagos, barbunya gibi mevsim balığı konuşulur. Koruma altındaki türler teknede kalmaz, bırakılır. “Kasa dolu döneriz” cümlesi burada yok.</p>
-        <p>Kendi kamışınız varsa getirin. Yoksa temel takım teknede. Şapka, krem, su, ince hırka. Güverte sıcaktır, gölge azdır. Çocuk gelebilir; olta başına oturacak kadar sabrı varsa.</p>
-      </div>
-      <div class="split-visual reveal">
-        <img src="./assets/images/hero/private-tour-hero.jpg" alt="Adrasan açıklarında özel tur teknesi, balık avı kalkışı" width="1366" height="768" loading="lazy">
-      </div>
-    </div>
-  </section>
-
-  <section class="section section-alt">
-    <div class="container">
-      <div class="section-intro reveal">
-        <div>
-          <span class="kicker">Nasıl geçer</span>
-          <h2>Kısa program, uzun bekleyiş.</h2>
-        </div>
-        <p>Rota avın işine göre değişir. Siz oltayı tutun; yeri kaptan seçer.</p>
-      </div>
-      <div class="route-list reveal">
-        <div class="route-item">
-          <div>
-            <strong>İskelede buluşma</strong>
-            <small>Adrasan sahil iskelesi. Saat o günün rüzgârına ve mevsime göre netleşir. WhatsApp’tan “şu saatte iskelede” deriz.</small>
-          </div>
-        </div>
-        <div class="route-item">
-          <div>
-            <strong>Av noktası</strong>
-            <small>Koy içinde veya kıyı açığında, dip ve akıntıya bakılır. Suluada yüzme molası bu turun parçası değildir; isterseniz ayrı gün planlanır.</small>
-          </div>
-        </div>
-        <div class="route-item">
-          <div>
-            <strong>Olta / dip avı</strong>
-            <small>Temel takım teknede. Kendi ekipmanınız varsa söyleyin, yeri ona göre ayarlarız. Yem o güne göre konuşulur.</small>
-          </div>
-          <span class="badge">Yerel</span>
-        </div>
-        <div class="route-item">
-          <div>
-            <strong>Dönüş</strong>
-            <small>Yaklaşık 4–6 saat. Uzatmak isterseniz özel tur gibi konuşulur. İskele yürüme mesafesi; Eylül Apart’ta kalanlar için pratik.</small>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="section-intro reveal">
-        <div>
-          <span class="kicker">Kimler için</span>
-          <h2>Yüzmek isteyen ayrı, oltayı seven ayrı.</h2>
-        </div>
-      </div>
-      <div class="grid-3">
-        <article class="card reveal">
-          <span class="stat">Olta</span>
-          <h3>Deneyimli veya yeni başlayan</h3>
-          <p>Düğümü kaptan atar, yemi gösterir. İlk kez tutuyorsanız utanmayın. İnatçıysanız kendi kamışınızı getirin.</p>
-        </article>
-        <article class="card reveal">
-          <span class="stat">Grup</span>
-          <h3>Küçük özel tekne</h3>
-          <p>Tekne size kalır; yabancıyla paylaşma yok. Kalabalık olunca güverte daralır — kişi sayısını baştan yazın.</p>
-        </article>
-        <article class="card reveal">
-          <span class="stat">Aile</span>
-          <h3>Sabırlı çocuk</h3>
-          <p>Can yeleği var. Küçük çocuk için tam gün Suluada bazen daha uygun. Balık avı bekleyiştir; sıkılırsa söyleyin, temponu kısarız.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section-alt">
-    <div class="container split">
-      <div class="split-copy reveal">
-        <span class="kicker">Dürüstçe</span>
-        <h2>Bilmeniz iyi olan birkaç şey.</h2>
-        <div class="route-list" style="margin-top:1rem">
-          <div class="route-item">
-            <div>
-              <strong>Tutacağız diye söz yok</strong>
-              <small>Deniz o gün kapalı olabilir. Turun değeri kaptanın yeri bilmesi ve teknenin size özel olması. Fotoğraf için kasa dolu şart değil.</small>
-            </div>
-          </div>
-          <div class="route-item">
-            <div>
-              <strong>Koruma kuralları</strong>
-              <small>Yasak ve koruma altındaki türler bırakılır. Avcılık gösteriş değil; kaptan o gün neyin uygun olduğunu söyler.</small>
-            </div>
-          </div>
-          <div class="route-item">
-            <div>
-              <strong>Yemek dahil değil</strong>
-              <small>Su, atıştırmalık, varsa kendi yemeğiniz. Suluada turundaki öğle yemeği burada yok.</small>
-            </div>
-          </div>
-          <div class="route-item">
-            <div>
-              <strong>Hava bozarsa çıkmayız</strong>
-              <small>Meltem veya dalga oltayı değil, tekneyi zorlarsa erteleyip konuşuruz.</small>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="split-visual reveal">
-        <img src="./assets/images/boat/tekne-turkuaz-koy.jpg" alt="Adrasan koyunda Engin Kaptan teknesi" width="1366" height="768" loading="lazy">
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="section-intro reveal">
-        <div>
-          <span class="kicker">Tur Kapsamı</span>
-          <h2>Neler dahil?</h2>
-        </div>
-      </div>
-      <div class="grid-2">
-        <article class="card reveal">
-          <h3 style="color:var(--color-primary);margin-bottom:1rem">✓ Dahil olanlar</h3>
-          <div class="route-list">
-            <div class="route-item"><div><strong>Kaptan ve tekne</strong><small>Adrasan ve çevresini bilen kaptan, yakıt dahil.</small></div></div>
-            <div class="route-item"><div><strong>Temel olta takımı</strong><small>Teknede basit takım bulunur. Kendi kamışınız varsa getirin.</small></div></div>
-            <div class="route-item"><div><strong>Can yeleği</strong><small>Her yaşa uygun yelek güvertede.</small></div></div>
-          </div>
-        </article>
-        <article class="card reveal">
-          <h3 style="color:var(--color-text-muted);margin-bottom:1rem">— Siz getirin veya konuşun</h3>
-          <div class="route-list">
-            <div class="route-item"><div><strong>Yem</strong><small>O güne göre konuşulur; bazen siz alın, bazen birlikte çözülür.</small></div></div>
-            <div class="route-item"><div><strong>Yiyecek / içecek</strong><small>Su ve atıştırmalık getirin.</small></div></div>
-            <div class="route-item"><div><strong>Kendi ekipman</strong><small>Spin, dip kamışı, kova — ne kullanıyorsanız yazın.</small></div></div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section-alt" id="sss">
-    <div class="container">
-      <div class="section-intro reveal">
-        <div>
-          <span class="kicker">Sık sorulanlar</span>
-          <h2>Kısa cevaplar, net bilgi.</h2>
-        </div>
-      </div>
-      <div class="faq-list reveal">
-        <article class="faq-item">
-          <h3>Suluada turundan farkı nedir?</h3>
-          <p>Suluada yüzme ve koy turu, öğle yemeği dahil. Balık avı ayrı gün, ayrı tempo. Aynı teknede “hem ada hem olta” sıkışmaz; ikisini ayrı yazın.</p>
-        </article>
-        <article class="faq-item">
-          <h3>Özel tur ile aynı mı?</h3>
-          <p>Tekne yine size özel. Amaç farklı: özel turda koy ve yüzme, burada av. Yüzmek istiyorsanız <a href="./ozel-tur.html" style="color:var(--color-primary);font-weight:700;text-decoration:underline;text-underline-offset:3px">özel tur</a> sayfasına bakın.</p>
-        </article>
-        <article class="faq-item">
-          <h3>Saat ve fiyat?</h3>
-          <p>Sabit 10:00 yok. Kişi sayısı, süre ve mevsime göre fiyat değişir. Tarih ve kaç kişi yazın, net dönüş yapalım.</p>
-        </article>
-        <article class="faq-item">
-          <h3>Ne tutulur?</h3>
-          <p>Mevsim balığı. Listeyi buraya çakıp sonra “o gün yoktu” demek istemiyoruz. Koruma altındakiler bırakılır.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="cta reveal">
-        <span class="kicker">Rezervasyon</span>
-        <h2>Tarihi ve kişi sayısını yazın, o günün saatini birlikte netleştirelim.</h2>
-        <p>Mesaja “balık avı”, tarih ve kaç kişi yazmanız yeterli. Kendi kamışınız varsa onu da ekleyin. Seyirde telefon çekmeyebilir.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="https://wa.me/905323328476?text=Merhaba%2C%20Adrasan%20balik%20avi%20icin%20tarih%20ve%20kisi%20sayisi%20yaziyorum." target="_blank" rel="noopener noreferrer">WhatsApp ile yaz</a>
-          <a class="btn btn-secondary" href="tel:+905323328476">📞 +90 532 332 84 76</a>
-          <a class="btn btn-secondary" href="./ozel-tur.html">Özel tur</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<footer class="footer">
-  <div class="container footer-grid">
-    <div>
-      <img src="./assets/images/logo/logo-small.png" alt="Adrasan Engin Kaptan logosu" width="200" height="70">
-      <strong>Adrasan Engin Kaptan</strong>
-      <p>Adrasan çıkışlı Suluada, sunset, özel tur ve balık avı; Eylül Apart konaklama. Antalya — Kumluca — Adrasan.</p>
-    </div>
-    <nav class="footer-nav" aria-label="Alt menü">
-      <a href="./suluada-turu.html">Suluada Turu</a>
-      <a href="./ozel-tur.html">Özel Tur</a>
-      <a href="./balik-avi.html">Balık Avı</a>
-      <a href="./sunset-turu.html">Sunset Turu</a>
-      <a href="./eylul-apart.html">Eylül Apart</a>
-      <a href="./galeri.html">Fotoğraflar</a>
-      <a href="./iletisim.html">İletişim</a>
-      <a href="./video-galeri.html">Videolar</a>
-      <a href="./blog.html">Merak Edilenler</a>
-    </nav>
-  </div>
-</footer>
-
-<script src="./script.js" defer></script>
-</body>
-</html>
+  .video-hero h1{max-width:14ch}
+  .video-hero-content{padding-top:6.2rem}
+}
+@media (max-width: 640px){
+  .video-hero{
+    min-height:72dvh;
+    min-height:72svh;
+  }
+  .video-hero p{font-size:1rem}
+  .video-hero .hero-actions{
+    display:grid;
+    grid-template-columns:1fr;
+  }
+  .video-hero .hero-meta span{
+    width:auto;
+    display:inline-flex;
+  }
+  .video-hero .hero-meta{gap:.45rem}
+}
+@media (prefers-reduced-motion:reduce){
+  .video-hero-media video{animation:none}
+}
